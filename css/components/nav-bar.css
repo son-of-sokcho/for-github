@@ -1,0 +1,25 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(241, 241, 241);
+  padding: 14px 50px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+}
+#nav__1 {
+  fill: rgba(0, 0, 0, 0.8);
+}
+#nav__2 {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+#nav__3 {
+  fill: rgba(0, 0, 0, 0.8);
+}
+#nav__4 {
+  stroke: rgba(0, 0, 0, 0.8);
+}
