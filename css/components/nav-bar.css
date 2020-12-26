@@ -11,6 +11,36 @@
   display: flex;
   justify-content: space-between;
 }
+.nav__a {
+  position: relative;
+}
+.nav_notification {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(245, 87, 59);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  /* display:flex has block property */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* position:absolute는 부모의 속성 기준으로 움직임, 부모의 포지션을 relative로 설정하기 */
+  right: -4px;
+  top: -24px;
+}
+.nav__new {
+  background-color: rgb(245, 87, 59);
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  /* position:absolute는 부모의 속성 기준으로 움직임, 부모의 포지션을 relative로 설정하기 */
+  right: -4px;
+  top: -16px;
+}
 #nav__1 {
   fill: rgba(0, 0, 0, 0.8);
 }
