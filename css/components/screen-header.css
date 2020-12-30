@@ -3,14 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0px var(--horizontal-space);
 }
 .screen-header__title {
-  padding-left: 20px;
   font-size: 30px;
   font-weight: 500;
-}
-.screen-header__icon {
-  padding-right: 20px;
+  color: black;
 }
 .screen-header__icon span {
   margin-left: 20px;
