@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Screen</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <!-- To do Wifi-icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20px"
+          height="14px"
+          viewBox="0 0 31.83 23.995"
+        >
+          <path
+            fill="#000"
+            fill-rule="evenodd"
+            d="M425.275-3628.81l-2.788 3.136a1.987 1.987 0 0 1-2.974 0l-2.788-3.136a1.98 1.98 0 0 1 .288-2.922A6.881 6.881 0 0 1 421-3633a6.876 6.876 0 0 1 3.986 1.268 1.98 1.98 0 0 1 .29 2.922m11.136-11.562a2 2 0 0 0-.17-2.822A22.954 22.954 0 0 0 421-3649a22.962 22.962 0 0 0-15.242 5.806 2 2 0 0 0-.168 2.822 2 2 0 0 0 2.822.17A18.969 18.969 0 0 1 421-3645a18.962 18.962 0 0 1 12.588 4.8 1.993 1.993 0 0 0 1.326.5 2 2 0 0 0 1.5-.674m-6.618 6.818a1.986 1.986 0 0 1-1.352-.528A10.963 10.963 0 0 0 421-3637a10.962 10.962 0 0 0-7.44 2.918 2 2 0 0 1-2.826-.118 2 2 0 0 1 .118-2.826A14.956 14.956 0 0 1 421-3641a14.957 14.957 0 0 1 10.15 3.974 2 2 0 0 1 .118 2.826 2 2 0 0 1-1.474.646"
+            transform="translate(-405.085 3649)"
+          />
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <!--Battery icon and lightening icon-->
+        <svg
+          class="battery-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="14"
+          viewBox="0 0 49.156 22.667"
+        >
+          <g fill="none" stroke="#000" stroke-miterlimit="10" opacity="0.35">
+            <rect width="44" height="22.667" stroke="none" rx="2.667" />
+            <rect width="43" height="21.667" x=".5" y=".5" rx="2.167" />
+          </g>
+          <path
+            stroke="rgba(0,0,0,0)"
+            d="M0 0v8a4.34 4.34 0 0 0 2.656-4A4.34 4.34 0 0 0 0 0"
+            opacity="0.4"
+            transform="translate(46 7.333)"
+          />
+          <rect
+            width="36"
+            height="14.667"
+            stroke="rgba(0,0,0,0)"
+            rx="1.333"
+            transform="translate(4 4)"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Search</h1>
+      <div class="screen-header__icon">
+        <span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="-6 -6 44 44"
+          >
+            <path
+              data-name="패스 5014"
+              d="M413-1486a10.011,10.011,0,0,1-10-10,10.011,10.011,0,0,1,10-10,10.011,10.011,0,0,1,10,10,10.011,10.011,0,0,1-10,10m22,9.172-10.8-10.8A13.912,13.912,0,0,0,427-1496a14.015,14.015,0,0,0-14-14,14.015,14.015,0,0,0-14,14,14.015,14.015,0,0,0,14,14,13.912,13.912,0,0,0,8.368-2.8l10.8,10.8a2.005,2.005,0,0,0,2.828,0,2.005,2.005,0,0,0,0-2.828"
+              transform="translate(-399 1510)"
+              fill="#1d1d1d"
+              fill-rule="evenodd"
+            /></svg
+        ></span>
+
+        <span
+          ><span class="screen-header__icon-new"> </span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            viewBox="-6 -6 52 52"
+          >
+            <g
+              id="그룹_65840"
+              data-name="그룹 65840"
+              transform="translate(-1310 -620)"
+            >
+              <path
+                id="패스_5084"
+                data-name="패스 5084"
+                d="M25-1580a10,10,0,0,1-10-10,10,10,0,0,1,10-10,10,10,0,0,1,10,10,10,10,0,0,1-10,10m21.934-11.552a1.972,1.972,0,0,0-1.6-1.74l-4.932-.984a15.634,15.634,0,0,0-1.212-3.094l2.85-4.268a1.978,1.978,0,0,0-.082-2.342,22.187,22.187,0,0,0-2.422-2.5,1.973,1.973,0,0,0-2.39-.122l-4.142,2.766a15.956,15.956,0,0,0-3.336-1.466l-1-4.992a2.01,2.01,0,0,0-1.782-1.608c-.622-.06-1.252-.1-1.89-.1-.444,0-.882.018-1.32.048a2.036,2.036,0,0,0-1.878,1.612l-.98,4.91a16.023,16.023,0,0,0-3.584,1.442l-4.184-2.79a1.969,1.969,0,0,0-2.368.1,21.9,21.9,0,0,0-2.36,2.36,1.969,1.969,0,0,0-.1,2.368l2.792,4.184a15.931,15.931,0,0,0-1.444,3.584l-4.908.98a2.036,2.036,0,0,0-1.614,1.878c-.03.436-.048.876-.048,1.32,0,.638.036,1.268.1,1.89a2.012,2.012,0,0,0,1.608,1.782l4.992,1a15.972,15.972,0,0,0,1.466,3.338L8.4-1577.852a1.972,1.972,0,0,0,.12,2.39,22.161,22.161,0,0,0,2.5,2.42,1.972,1.972,0,0,0,2.342.082l4.268-2.848a15.892,15.892,0,0,0,3.094,1.212l.984,4.932a1.972,1.972,0,0,0,1.742,1.6c.51.042,1.028.066,1.55.066.672,0,1.334-.04,1.988-.1a2.018,2.018,0,0,0,1.78-1.608l1-5.01a16.007,16.007,0,0,0,2.872-1.218l4.2,2.8a1.971,1.971,0,0,0,2.362-.1,22.006,22.006,0,0,0,2.564-2.564,1.975,1.975,0,0,0,.1-2.362l-2.8-4.2a16.054,16.054,0,0,0,1.216-2.872l5.012-1a2.018,2.018,0,0,0,1.606-1.78A19.773,19.773,0,0,0,47-1590c0-.524-.024-1.04-.066-1.552"
+                transform="translate(1307 2232)"
+                stroke-width="4px"
+                stroke="#1d1d1d"
+                fill="transparent"
+                fill-rule="evenodd"
+              />
+            </g></svg
+        ></span>
+      </div>
+    </header>
+
+    <!-- <a href="#" id="friends-display-link"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 40 40"
+      >
+        <g
+          id="exclamation"
+          data-name="그룹 65841"
+          transform="translate(-1916 13448)"
+        >
+          <rect
+            id="사각형_138628"
+            data-name="사각형 138628"
+            width="8"
+            height="8"
+            transform="translate(1930 -13444)"
+            fill="#fff"
+          />
+          <path
+            id="패스_8052"
+            data-name="패스 8052"
+            d="M25-1400a3,3,0,0,1-3-3,3,3,0,0,1,3-3,3,3,0,0,1,3,3A3,3,0,0,1,25-1400Zm2,16a2.006,2.006,0,0,1-2,2,2.006,2.006,0,0,1-2-2v-12a2.006,2.006,0,0,1,2-2,2.006,2.006,0,0,1,2,2Zm-2-28a18,18,0,0,0-18,18,18,18,0,0,0,18,18,18,18,0,0,0,18-18A18,18,0,0,0,25-1412Z"
+            transform="translate(1909 -12036)"
+            fill="#c9c9c9"
+            fill-rule="evenodd"
+          />
+        </g>
+      </svg>
+      Friends' Names Display
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="10"
+        height="12"
+        viewBox="0 -4 14 28"
+      >
+        <path
+          id="go"
+          data-name="패스 5402"
+          d="M319-3141a1.994,1.994,0,0,1-1.414-.586,2,2,0,0,1,0-2.828l8.586-8.586-8.586-8.586a2,2,0,0,1,0-2.828,2,2,0,0,1,2.828,0l10,10a2,2,0,0,1,0,2.828l-10,10A2,2,0,0,1,319-3141Z"
+          transform="translate(-317 3165)"
+          fill="#c9c9c9"
+        />
+      </svg>
+    </a> -->
+
+    <main class="friends-screen">
+      <div class="search-icons">
+        <div class="search-icons__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+          >
+            <g
+              id="그룹_65861"
+              data-name="그룹 65861"
+              transform="translate(-48.5 -658.5)"
+            >
+              <g id="그룹_65851" data-name="그룹 65851">
+                <g id="그룹_65850" data-name="그룹 65850">
+                  <path
+                    id="패스_8059"
+                    data-name="패스 8059"
+                    d="M50,674.833a1.5,1.5,0,0,1-1.5-1.5V660a1.5,1.5,0,0,1,1.5-1.5H63.333a1.5,1.5,0,0,1,0,3H51.5v11.833A1.5,1.5,0,0,1,50,674.833Z"
+                    fill="#1d1d1d"
+                  />
+                </g>
+              </g>
+              <g id="그룹_65853" data-name="그룹 65853">
+                <g id="그룹_65852" data-name="그룹 65852">
+                  <path
+                    id="패스_8060"
+                    data-name="패스 8060"
+                    d="M90,674.833a1.5,1.5,0,0,1-1.5-1.5V661.5H76.667a1.5,1.5,0,0,1,0-3H90a1.5,1.5,0,0,1,1.5,1.5v13.333A1.5,1.5,0,0,1,90,674.833Z"
+                    fill="#1d1d1d"
+                  />
+                </g>
+              </g>
+              <g id="그룹_65855" data-name="그룹 65855">
+                <g id="그룹_65854" data-name="그룹 65854">
+                  <path
+                    id="패스_8061"
+                    data-name="패스 8061"
+                    d="M90,701.5H76.667a1.5,1.5,0,0,1,0-3H88.5V686.667a1.5,1.5,0,0,1,3,0V700A1.5,1.5,0,0,1,90,701.5Z"
+                    fill="#1d1d1d"
+                  />
+                </g>
+              </g>
+              <g id="그룹_65857" data-name="그룹 65857">
+                <g id="그룹_65856" data-name="그룹 65856">
+                  <path
+                    id="패스_8062"
+                    data-name="패스 8062"
+                    d="M63.333,701.5H50a1.5,1.5,0,0,1-1.5-1.5V686.667a1.5,1.5,0,0,1,3,0V698.5H63.333a1.5,1.5,0,0,1,0,3Z"
+                    fill="#1d1d1d"
+                  />
+                </g>
+              </g>
+              <g id="그룹_65860" data-name="그룹 65860">
+                <g id="그룹_65858" data-name="그룹 65858">
+                  <path
+                    id="패스_8063"
+                    data-name="패스 8063"
+                    d="M69.66,678.918v.656a6.364,6.364,0,0,1-1.056,3.953l.928.912a.737.737,0,0,1-.1,1.1.728.728,0,0,1-1.088.08L67.307,684.6a5.765,5.765,0,0,1-2.545.512c-3.1,0-4.9-1.648-4.9-5.538v-.656c0-3.89,1.793-5.539,4.9-5.539S69.66,675.028,69.66,678.918Zm-7.731.159v.337c0,2.9.961,3.825,2.833,3.825a3.762,3.762,0,0,0,1.041-.128l-.945-.944a.729.729,0,0,1,.08-1.089.737.737,0,0,1,1.1-.1l1.072,1.073a5.7,5.7,0,0,0,.481-2.641v-.337c0-2.9-.961-3.825-2.834-3.825S61.929,676.181,61.929,679.077Z"
+                    fill="#1d1d1d"
+                  />
+                </g>
+                <g id="그룹_65859" data-name="그룹 65859">
+                  <path
+                    id="패스_8064"
+                    data-name="패스 8064"
+                    d="M76.09,673.556c2.369,0,3.745,1.28,3.745,3.281v.288a2.961,2.961,0,0,1-1.936,2.929l2.017,3.569A.881.881,0,0,1,79.5,684.9a.95.95,0,0,1-1.345-.337l-2.193-4.193a2.594,2.594,0,0,1-.352.016H73.769v3.761c0,.609-.48.881-1.024.881s-1.025-.272-1.025-.881v-9.267c0-1.008.337-1.328,1.361-1.328Zm-2.321,5.122h1.873c1.552,0,2.161-.545,2.161-1.585v-.208c0-1.057-.609-1.616-1.985-1.616H73.769Z"
+                    fill="#1d1d1d"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <span>QR Code</span>
+        </div>
+        <div class="search-icons__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+          >
+            <g
+              id="그룹_65862"
+              data-name="그룹 65862"
+              transform="translate(-98.5 -658.5)"
+            >
+              <path
+                id="패스_8065"
+                data-name="패스 8065"
+                d="M134.388,658.5H110.612a7.12,7.12,0,0,0-7.112,7.112V668.5H100a1.5,1.5,0,0,0,0,3h3.5v17H100a1.5,1.5,0,0,0,0,3h3.5v2.888a7.12,7.12,0,0,0,7.112,7.112h23.776a7.12,7.12,0,0,0,7.112-7.112V665.612A7.12,7.12,0,0,0,134.388,658.5Zm4.112,35.888a4.117,4.117,0,0,1-4.112,4.112H110.612a4.117,4.117,0,0,1-4.112-4.112V691.5H110a1.5,1.5,0,0,0,0-3h-3.5v-17H110a1.5,1.5,0,0,0,0-3h-3.5v-2.888a4.117,4.117,0,0,1,4.112-4.112h23.776a4.117,4.117,0,0,1,4.112,4.112Z"
+                fill="#1d1d1d"
+              />
+              <path
+                id="패스_8066"
+                data-name="패스 8066"
+                d="M123.375,679a5.25,5.25,0,1,0-5.25-5.25A5.256,5.256,0,0,0,123.375,679Zm0-7.5a2.25,2.25,0,1,1-2.25,2.25A2.253,2.253,0,0,1,123.375,671.5Z"
+                fill="#1d1d1d"
+              />
+              <path
+                id="패스_8067"
+                data-name="패스 8067"
+                d="M123.375,681.125A8.885,8.885,0,0,0,114.5,690a1.5,1.5,0,0,0,3,0,5.875,5.875,0,0,1,11.75,0,1.5,1.5,0,0,0,3,0A8.885,8.885,0,0,0,123.375,681.125Z"
+                fill="#1d1d1d"
+              />
+            </g></svg
+          ><span id="search-icons__icon__text2">Add by <br />Contacts</span>
+        </div>
+        <div class="search-icons__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+          >
+            <g
+              id="그룹_65865"
+              data-name="그룹 65865"
+              transform="translate(-148.5 -658.5)"
+            >
+              <g id="그룹_65863" data-name="그룹 65863">
+                <path
+                  id="패스_8068"
+                  data-name="패스 8068"
+                  d="M165.486,674.893v10.223c0,.634-.5.917-1.068.917s-1.067-.283-1.067-.917V674.893c0-.634.5-.917,1.067-.917S165.486,674.259,165.486,674.893Z"
+                  fill="#1d1d1d"
+                />
+                <path
+                  id="패스_8069"
+                  data-name="패스 8069"
+                  d="M172.358,674.075c3.452,0,5.253,1.585,5.253,5.62v.618c0,4.036-1.8,5.621-5.253,5.621h-2.752c-1.067,0-1.418-.334-1.418-1.385V675.46c0-1.051.351-1.385,1.418-1.385Zm-2.051,10.057h1.767c2.435,0,3.386-.984,3.386-3.986v-.284c0-3-.951-3.985-3.386-3.985h-1.767Z"
+                  fill="#1d1d1d"
+                />
+              </g>
+              <g id="그룹_65864" data-name="그룹 65864">
+                <path
+                  id="패스_8070"
+                  data-name="패스 8070"
+                  d="M170,701.5A21.5,21.5,0,1,1,191.5,680,21.525,21.525,0,0,1,170,701.5Zm0-40A18.5,18.5,0,1,0,188.5,680,18.521,18.521,0,0,0,170,661.5Z"
+                  fill="#1d1d1d"
+                />
+              </g>
+            </g></svg
+          ><span>Add by ID</span>
+        </div>
+        <div class="search-icons__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="43"
+            height="39"
+            viewBox="0 0 43 39"
+          >
+            <path
+              id="패스_8071"
+              data-name="패스 8071"
+              d="M232,660.5H208a9.511,9.511,0,0,0-9.5,9.5v20a9.511,9.511,0,0,0,9.5,9.5h24a9.511,9.511,0,0,0,9.5-9.5V670A9.511,9.511,0,0,0,232,660.5Zm-24,3h24a6.508,6.508,0,0,1,6.5,6.5v1.151l-12.822,7.693a6.493,6.493,0,0,0-11.356,0L201.5,671.151V670A6.508,6.508,0,0,1,208,663.5ZM223.5,682a3.5,3.5,0,1,1-3.5-3.5A3.5,3.5,0,0,1,223.5,682Zm8.5,14.5H208a6.508,6.508,0,0,1-6.5-6.5V674.649l11.555,6.933c.142.085.3.168.453.251,0,.056-.008.111-.008.167a6.5,6.5,0,0,0,13,0c0-.056-.007-.111-.008-.167.154-.083.311-.165.454-.251l11.554-6.933V690A6.508,6.508,0,0,1,232,696.5Z"
+              transform="translate(-198.5 -660.5)"
+              fill="#1d1d1d"
+            />
+          </svg>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4 class="open-chat__title">Open Chat</h4>
+          <div class="open-chat__title2">
+            <span>Go to Openchat Home</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="12"
+              viewBox="0 -4 14 28"
+            >
+              <path
+                id="go"
+                data-name="패스 5402"
+                d="M319-3141a1.994,1.994,0,0,1-1.414-.586,2,2,0,0,1,0-2.828l8.586-8.586-8.586-8.586a2,2,0,0,1,0-2.828,2,2,0,0,1,2.828,0l10,10a2,2,0,0,1,0,2.828l-10,10A2,2,0,0,1,319-3141Z"
+                transform="translate(-317 3165)"
+                fill="#c9c9c9"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="open-post">
+        <div class="open-post__article">
+          <div class="open-post-column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#BTS #ARMY #FRIENDS</h6>
+            <div class="open-post__members">
+              <img src="SJH01378.jpg" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post-column">
+            <div class="open-post__photo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0d/%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg"
+              />
+              <div class="open-post__heart-count">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 50.778 42.337"
+                >
+                  <path
+                    id="패스_8072"
+                    data-name="패스 8072"
+                    d="M-323.42,1079.515c10.023-12.357,28.928-7.839,24.811,11.105-2.406,11.073-13.32,21.318-24.811,24.32-11.493-3-22.406-13.247-24.813-24.32-4.116-18.944,14.789-23.462,24.813-11.105"
+                    transform="translate(348.81 -1072.603)"
+                    fill="#fff"
+                  />
+                </svg>
+                <span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div class="open-post__article">
+          <div class="open-post-column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#BTS #ARMY #FRIENDS</h6>
+            <div class="open-post__members">
+              <img src="SJH01378.jpg" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post-column">
+            <div class="open-post__photo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0d/%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg"
+              />
+              <div class="open-post__heart-count">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 50.778 42.337"
+                >
+                  <path
+                    id="패스_8072"
+                    data-name="패스 8072"
+                    d="M-323.42,1079.515c10.023-12.357,28.928-7.839,24.811,11.105-2.406,11.073-13.32,21.318-24.811,24.32-11.493-3-22.406-13.247-24.813-24.32-4.116-18.944,14.789-23.462,24.813-11.105"
+                    transform="translate(348.81 -1072.603)"
+                    fill="#fff"
+                  />
+                </svg>
+                <span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="34"
+              viewBox="-2 -1 48 48"
+            >
+              <path
+                id="nav__1"
+                data-name="패스 5088"
+                d="M515-1685.33c-9.86,0-18.086,6-20,13.982a33.8,33.8,0,0,0,20,6.342,33.786,33.786,0,0,0,20-6.344c-1.914-7.98-10.14-13.98-20-13.98M526-1699a11,11,0,0,1-11,11,11,11,0,0,1-11-11,11,11,0,0,1,11-11,11,11,0,0,1,11,11"
+                transform="translate(-495 1710)"
+                stroke="#1d1d1d"
+                stroke-width="4px"
+                fill="transparent"
+                fill-rule="evenodd"
+              /></svg
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span class="nav_notification badge">1</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="-2 0 48 44"
+            >
+              <path
+                id="nav__2"
+                data-name="패스 5303"
+                d="M127-1218h-8a16.047,16.047,0,0,0-16,16,16.047,16.047,0,0,0,16,16h6.7c.268,3.774-.108,7.664-1.954,10.544C134.362-1179.088,143-1190.15,143-1202a16.047,16.047,0,0,0-16-16"
+                transform="translate(-103 1218)"
+                stroke="#1d1d1d"
+                stroke-width="4px"
+                fill="transparent"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="search.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="-1 -1 44 44"
+            >
+              <path
+                id="nav__3"
+                data-name="패스 5014"
+                d="M413-1486a10.011,10.011,0,0,1-10-10,10.011,10.011,0,0,1,10-10,10.011,10.011,0,0,1,10,10,10.011,10.011,0,0,1-10,10m22,9.172-10.8-10.8A13.912,13.912,0,0,0,427-1496a14.015,14.015,0,0,0-14-14,14.015,14.015,0,0,0-14,14,14.015,14.015,0,0,0,14,14,13.912,13.912,0,0,0,8.368-2.8l10.8,10.8a2.005,2.005,0,0,0,2.828,0,2.005,2.005,0,0,0,0-2.828"
+                transform="translate(-399 1510)"
+                stroke="#1d1d1d"
+                stroke-width="2px"
+                fill="#1D1D1D"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html"
+            ><span class="nav__new"> </span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="-2 -20 44 44"
+            >
+              <path
+                id="nav__4"
+                data-name="패스 5279"
+                d="M319-796a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4,4,4,0,0,0-4-4m0-14a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4,4,4,0,0,0-4-4m4-10a4,4,0,0,1-4,4,4,4,0,0,1-4-4,4,4,0,0,1,4-4,4,4,0,0,1,4,4"
+                transform="translate(824 323) rotate(-90)"
+                stroke="#1d1d1d"
+                stroke-width="4px"
+                fill="transparent"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

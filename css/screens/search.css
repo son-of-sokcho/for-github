@@ -1,0 +1,114 @@
+.search-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.search-icons__icon {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+}
+.search-icons__icon svg {
+  padding: 26px 0px;
+}
+#search-icons__icon__text2 {
+  margin-top: -6px;
+}
+.recommended-friends {
+  margin: 18px 0px;
+  padding: 12px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+.recommended-friends__title {
+  font-size: 14px;
+  color: rgb(0, 0, 0, 0.3);
+}
+.recommended-friends span {
+  display: block;
+  text-align: center;
+  margin: 120px 0px;
+  font-size: 18px;
+  color: rgb(0, 0, 0, 0.3);
+}
+.open-chat__header {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.open-chat__title2 {
+  display: flex;
+  align-items: center;
+}
+.open-chat__title2 span {
+  margin-right: 4px;
+}
+.open-post {
+  display: block;
+}
+.open-post__article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-post__title {
+  margin-bottom: 6px;
+}
+.open-post__hashtags {
+  margin-bottom: 6px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 40%;
+  margin-right: 6px;
+}
+.open-post__member-count {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.open-post__members .divider {
+  width: 1px;
+  height: 14px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0px 6px;
+}
+.open-post__member-status {
+  color: rgb(251, 126, 255);
+}
+.open-post__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 20px;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  font-size: 14px;
+}
+.open-post__heart-count svg {
+  margin-right: 5px;
+}
+.open-post__article {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

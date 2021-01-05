@@ -14,3 +14,16 @@
 .screen-header__icon span {
   margin-left: 20px;
 }
+.screen-header__icon {
+  position: relative;
+}
+.screen-header__icon-new {
+  background-color: rgb(245, 87, 59);
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  /* position:absolute는 부모의 속성 기준으로 움직임, 부모의 포지션을 relative로 설정하기 */
+  right: -3px;
+  top: 0px;
+}
