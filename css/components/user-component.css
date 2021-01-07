@@ -1,7 +1,7 @@
 .user-component {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0px;
+  padding: 10px 0px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -22,11 +22,12 @@
   margin-right: 15px;
 }
 .user-component__title {
+  color: black;
   font-weight: 600;
 }
 .user-component__subtitle {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   margin-top: 8px;
 }
 

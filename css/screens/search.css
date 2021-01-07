@@ -1,18 +1,4 @@
-.search-icons {
-  display: flex;
-  justify-content: space-between;
-}
-.search-icons__icon {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 10px;
-}
-.search-icons__icon svg {
-  padding: 26px 0px;
-}
-#search-icons__icon__text2 {
+#icon-row__icon__text2 {
   margin-top: -6px;
 }
 .recommended-friends {

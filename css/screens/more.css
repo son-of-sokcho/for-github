@@ -1,0 +1,31 @@
+.main-screen-more {
+  margin: 0px var(--horizontal-space);
+}
+.icon-container {
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(4, 1fr); - 4칼럼으로 모두 동일한 비율로 그리드 적용*/
+  padding-bottom: 40px;
+}
+.icon-container .icon-row__icon svg {
+  margin-bottom: -10px;
+}
+.more-suggestions {
+  padding-top: 20px;
+  border-top: var(--main-border);
+}
+.more-suggestions__title {
+  color: black;
+  margin-bottom: 20px;
+}
+.more-suggestions__title__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.icon-row__icon__span {
+  color: rgba(0, 0, 0, 0.4);
+}

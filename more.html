@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Screen</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <!-- To do Wifi-icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20px"
+          height="14px"
+          viewBox="0 0 31.83 23.995"
+        >
+          <path
+            fill="#000"
+            fill-rule="evenodd"
+            d="M425.275-3628.81l-2.788 3.136a1.987 1.987 0 0 1-2.974 0l-2.788-3.136a1.98 1.98 0 0 1 .288-2.922A6.881 6.881 0 0 1 421-3633a6.876 6.876 0 0 1 3.986 1.268 1.98 1.98 0 0 1 .29 2.922m11.136-11.562a2 2 0 0 0-.17-2.822A22.954 22.954 0 0 0 421-3649a22.962 22.962 0 0 0-15.242 5.806 2 2 0 0 0-.168 2.822 2 2 0 0 0 2.822.17A18.969 18.969 0 0 1 421-3645a18.962 18.962 0 0 1 12.588 4.8 1.993 1.993 0 0 0 1.326.5 2 2 0 0 0 1.5-.674m-6.618 6.818a1.986 1.986 0 0 1-1.352-.528A10.963 10.963 0 0 0 421-3637a10.962 10.962 0 0 0-7.44 2.918 2 2 0 0 1-2.826-.118 2 2 0 0 1 .118-2.826A14.956 14.956 0 0 1 421-3641a14.957 14.957 0 0 1 10.15 3.974 2 2 0 0 1 .118 2.826 2 2 0 0 1-1.474.646"
+            transform="translate(-405.085 3649)"
+          />
+        </svg>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <!--Battery icon and lightening icon-->
+        <svg
+          class="battery-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="14"
+          viewBox="0 0 49.156 22.667"
+        >
+          <g fill="none" stroke="#000" stroke-miterlimit="10" opacity="0.35">
+            <rect width="44" height="22.667" stroke="none" rx="2.667" />
+            <rect width="43" height="21.667" x=".5" y=".5" rx="2.167" />
+          </g>
+          <path
+            stroke="rgba(0,0,0,0)"
+            d="M0 0v8a4.34 4.34 0 0 0 2.656-4A4.34 4.34 0 0 0 0 0"
+            opacity="0.4"
+            transform="translate(46 7.333)"
+          />
+          <rect
+            width="36"
+            height="14.667"
+            stroke="rgba(0,0,0,0)"
+            rx="1.333"
+            transform="translate(4 4)"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icon">
+        <span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="-6 -6 44 44"
+          >
+            <path
+              data-name="패스 5014"
+              d="M413-1486a10.011,10.011,0,0,1-10-10,10.011,10.011,0,0,1,10-10,10.011,10.011,0,0,1,10,10,10.011,10.011,0,0,1-10,10m22,9.172-10.8-10.8A13.912,13.912,0,0,0,427-1496a14.015,14.015,0,0,0-14-14,14.015,14.015,0,0,0-14,14,14.015,14.015,0,0,0,14,14,13.912,13.912,0,0,0,8.368-2.8l10.8,10.8a2.005,2.005,0,0,0,2.828,0,2.005,2.005,0,0,0,0-2.828"
+              transform="translate(-399 1510)"
+              fill="rgb(0,0,0)"
+              fill-rule="evenodd"
+            /></svg
+        ></span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="-4 -4 50 50"
+          >
+            <path
+              id="패스_5726"
+              data-name="패스 5726"
+              d="M616.333-1088a2,2,0,0,1-2-2,2,2,0,0,1,2-2,2,2,0,0,1,2,2A2,2,0,0,1,616.333-1088Zm3.9-15.872-1.9-.9v10.57a4.633,4.633,0,0,0-2-.468,4.672,4.672,0,0,0-4.667,4.667,4.672,4.672,0,0,0,4.667,4.667A4.672,4.672,0,0,0,621-1090v-10.177a4.6,4.6,0,0,1,1.4,1.913,1.329,1.329,0,0,0,1.673.868,1.331,1.331,0,0,0,.868-1.673C624-1102.025,620.617-1103.692,620.235-1103.872ZM605-1081.333h26.667V-1108H605ZM601-1108v16h-6.667v-26.667H621V-1112H605A4,4,0,0,0,601-1108Zm30.667-4H625v-6.667a4,4,0,0,0-4-4H594.333a4,4,0,0,0-4,4V-1092a4,4,0,0,0,4,4H601v6.667a4,4,0,0,0,4,4h26.667a4,4,0,0,0,4-4V-1108A4,4,0,0,0,631.667-1112Z"
+              transform="translate(-590.333 1122.667)"
+              fill="#000"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
+        <span>
+          <a href="settings.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              viewBox="-6 -6 52 52"
+            >
+              <g
+                id="그룹_65840"
+                data-name="그룹 65840"
+                transform="translate(-1310 -620)"
+              >
+                <path
+                  id="패스_5084"
+                  data-name="패스 5084"
+                  d="M25-1580a10,10,0,0,1-10-10,10,10,0,0,1,10-10,10,10,0,0,1,10,10,10,10,0,0,1-10,10m21.934-11.552a1.972,1.972,0,0,0-1.6-1.74l-4.932-.984a15.634,15.634,0,0,0-1.212-3.094l2.85-4.268a1.978,1.978,0,0,0-.082-2.342,22.187,22.187,0,0,0-2.422-2.5,1.973,1.973,0,0,0-2.39-.122l-4.142,2.766a15.956,15.956,0,0,0-3.336-1.466l-1-4.992a2.01,2.01,0,0,0-1.782-1.608c-.622-.06-1.252-.1-1.89-.1-.444,0-.882.018-1.32.048a2.036,2.036,0,0,0-1.878,1.612l-.98,4.91a16.023,16.023,0,0,0-3.584,1.442l-4.184-2.79a1.969,1.969,0,0,0-2.368.1,21.9,21.9,0,0,0-2.36,2.36,1.969,1.969,0,0,0-.1,2.368l2.792,4.184a15.931,15.931,0,0,0-1.444,3.584l-4.908.98a2.036,2.036,0,0,0-1.614,1.878c-.03.436-.048.876-.048,1.32,0,.638.036,1.268.1,1.89a2.012,2.012,0,0,0,1.608,1.782l4.992,1a15.972,15.972,0,0,0,1.466,3.338L8.4-1577.852a1.972,1.972,0,0,0,.12,2.39,22.161,22.161,0,0,0,2.5,2.42,1.972,1.972,0,0,0,2.342.082l4.268-2.848a15.892,15.892,0,0,0,3.094,1.212l.984,4.932a1.972,1.972,0,0,0,1.742,1.6c.51.042,1.028.066,1.55.066.672,0,1.334-.04,1.988-.1a2.018,2.018,0,0,0,1.78-1.608l1-5.01a16.007,16.007,0,0,0,2.872-1.218l4.2,2.8a1.971,1.971,0,0,0,2.362-.1,22.006,22.006,0,0,0,2.564-2.564,1.975,1.975,0,0,0,.1-2.362l-2.8-4.2a16.054,16.054,0,0,0,1.216-2.872l5.012-1a2.018,2.018,0,0,0,1.606-1.78A19.773,19.773,0,0,0,47-1590c0-.524-.024-1.04-.066-1.552"
+                  transform="translate(1307 2232)"
+                  stroke-width="4px"
+                  stroke="black"
+                  fill="transparent"
+                  fill-rule="evenodd"
+                />
+              </g>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen-more">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="SJH01378.jpg"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h5 class="user-component__title">Hyukjae</h5>
+            <h4 class="user-component__subtitle">+82 10-2725-1836</h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 44 42"
+          >
+            <g
+              id="그룹_65866"
+              data-name="그룹 65866"
+              transform="translate(-1970 -1594)"
+            >
+              <path
+                id="패스_8073"
+                data-name="패스 8073"
+                d="M235-727H207a6.018,6.018,0,0,0-6,6v20a6.018,6.018,0,0,0,6,6v4a2,2,0,0,0,1.014,1.74A1.992,1.992,0,0,0,209-689a1.988,1.988,0,0,0,1.03-.286L219-695h16a6.018,6.018,0,0,0,6-6v-20A6.018,6.018,0,0,0,235-727Z"
+                transform="translate(1771 2323)"
+                fill="none"
+                stroke="#000"
+                stroke-width="3"
+              />
+              <rect
+                id="사각형_138629"
+                data-name="사각형 138629"
+                width="27"
+                height="3"
+                rx="1.5"
+                transform="translate(1979 1603)"
+              />
+              <rect
+                id="사각형_138630"
+                data-name="사각형 138630"
+                width="27"
+                height="3"
+                rx="1.5"
+                transform="translate(1979 1610)"
+              />
+              <rect
+                id="사각형_138631"
+                data-name="사각형 138631"
+                width="15"
+                height="3"
+                rx="1.5"
+                transform="translate(1979 1617)"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="icon-container">
+        <div class="icon-row__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="39"
+            height="36"
+            viewBox="0 0 39 36"
+          >
+            <g
+              id="그룹_65867"
+              data-name="그룹 65867"
+              transform="translate(-1977 -1565)"
+            >
+              <g
+                id="사각형_138632"
+                data-name="사각형 138632"
+                transform="translate(1977 1568)"
+                fill="none"
+                stroke="#000"
+                stroke-width="3"
+              >
+                <rect width="39" height="33" rx="6" stroke="none" />
+                <rect
+                  x="1.5"
+                  y="1.5"
+                  width="36"
+                  height="30"
+                  rx="4.5"
+                  fill="none"
+                />
+              </g>
+              <rect
+                id="사각형_138633"
+                data-name="사각형 138633"
+                width="3"
+                height="9"
+                rx="1.5"
+                transform="translate(1988 1565)"
+              />
+              <rect
+                id="사각형_138634"
+                data-name="사각형 138634"
+                width="3"
+                height="9"
+                rx="1.5"
+                transform="translate(2002 1565)"
+              />
+              <circle
+                id="타원_348"
+                data-name="타원 348"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1984 1576)"
+              />
+              <circle
+                id="타원_352"
+                data-name="타원 352"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1984 1583)"
+              />
+              <circle
+                id="타원_356"
+                data-name="타원 356"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1984 1590)"
+              />
+              <circle
+                id="타원_349"
+                data-name="타원 349"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1991 1576)"
+              />
+              <circle
+                id="타원_353"
+                data-name="타원 353"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1991 1583)"
+              />
+              <circle
+                id="타원_357"
+                data-name="타원 357"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1991 1590)"
+              />
+              <circle
+                id="타원_350"
+                data-name="타원 350"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1998 1576)"
+              />
+              <circle
+                id="타원_354"
+                data-name="타원 354"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1998 1583)"
+              />
+              <circle
+                id="타원_358"
+                data-name="타원 358"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(1998 1590)"
+              />
+              <circle
+                id="타원_351"
+                data-name="타원 351"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(2005 1576)"
+              />
+              <circle
+                id="타원_355"
+                data-name="타원 355"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(2005 1583)"
+              />
+              <circle
+                id="타원_359"
+                data-name="타원 359"
+                cx="2"
+                cy="2"
+                r="2"
+                transform="translate(2005 1590)"
+              />
+            </g>
+          </svg>
+          <span>Calender</span>
+        </div>
+        <div class="icon-row__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+          >
+            <g
+              id="그룹_65881"
+              data-name="그룹 65881"
+              transform="translate(-2023 -1565)"
+            >
+              <path
+                id="패스_8075"
+                data-name="패스 8075"
+                d="M1.9,13.563l4.77-4.77V21.665a1.111,1.111,0,0,0,2.222,0V8.793l4.77,4.77a1.111,1.111,0,1,0,1.571-1.571L8.563,5.325a1.11,1.11,0,0,0-1.571,0L.326,11.991A1.111,1.111,0,0,0,1.9,13.563M15.555,1.111a1.111,1.111,0,0,1-1.111,1.111H1.111A1.111,1.111,0,0,1,1.111,0H14.444a1.111,1.111,0,0,1,1.111,1.111"
+                transform="translate(2048.555 1593.775) rotate(180)"
+                fill-rule="evenodd"
+              />
+              <g
+                id="사각형_138635"
+                data-name="사각형 138635"
+                transform="translate(2023 1565)"
+                fill="none"
+                stroke="#000"
+                stroke-width="3"
+              >
+                <rect width="36" height="36" rx="6" stroke="none" />
+                <rect
+                  x="1.5"
+                  y="1.5"
+                  width="33"
+                  height="33"
+                  rx="4.5"
+                  fill="none"
+                />
+              </g>
+            </g>
+          </svg>
+          <span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+          >
+            <g
+              id="그룹_65872"
+              data-name="그룹 65872"
+              transform="translate(-140 -724)"
+            >
+              <g id="그룹_65869" data-name="그룹 65869">
+                <path
+                  id="패스_8077"
+                  data-name="패스 8077"
+                  d="M152.755,735.2a2.835,2.835,0,1,0,2.835,2.835A2.843,2.843,0,0,0,152.755,735.2Z"
+                />
+              </g>
+              <g id="그룹_65870" data-name="그룹 65870">
+                <path
+                  id="패스_8078"
+                  data-name="패스 8078"
+                  d="M163.064,735.2a2.835,2.835,0,1,0,2.834,2.835A2.843,2.843,0,0,0,163.064,735.2Z"
+                />
+              </g>
+              <g id="그룹_65871" data-name="그룹 65871">
+                <path
+                  id="패스_8079"
+                  data-name="패스 8079"
+                  d="M158.011,750.788a5.675,5.675,0,0,1-5.668-5.668,1.417,1.417,0,1,1,2.835,0,2.835,2.835,0,0,0,5.669,0,1.417,1.417,0,1,1,2.834,0A5.675,5.675,0,0,1,158.011,750.788Z"
+                />
+              </g>
+              <g id="사각형_138636" data-name="사각형 138636">
+                <rect
+                  id="사각형_138637"
+                  data-name="사각형 138637"
+                  width="36"
+                  height="36"
+                  rx="6.171"
+                  transform="translate(140 724)"
+                  fill="none"
+                />
+                <rect
+                  id="사각형_138638"
+                  data-name="사각형 138638"
+                  width="32.914"
+                  height="32.914"
+                  rx="4.629"
+                  transform="translate(141.543 725.543)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="3"
+                />
+              </g>
+            </g>
+          </svg>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="37.767"
+            height="37"
+            viewBox="0 0 37.767 37"
+          >
+            <g
+              id="그룹_65876"
+              data-name="그룹 65876"
+              transform="translate(-180 -724)"
+            >
+              <g
+                id="그룹_65878"
+                data-name="그룹 65878"
+                transform="translate(0)"
+              >
+                <path
+                  id="패스_8088"
+                  data-name="패스 8088"
+                  d="M213.767,734h-9v-5a5,5,0,0,0-10,0v5h-9a4,4,0,0,0-4,4v4a2,2,0,0,0,2,2h32a2,2,0,0,0,2-2v-4A4,4,0,0,0,213.767,734Zm1.5,7.5h-31V738a1.5,1.5,0,0,1,1.5-1.5h11.5V729a2.5,2.5,0,0,1,5,0v7.5h11.5a1.5,1.5,0,0,1,1.5,1.5Z"
+                />
+                <path
+                  id="패스_8089"
+                  data-name="패스 8089"
+                  d="M215.767,746h-32a2,2,0,0,0-2,2v5.528a2,2,0,0,1-.212.894l-1.341,2.684A2,2,0,0,0,182,760h2.781a.982.982,0,0,0,.468.857,1,1,0,0,0,1.372-.342l.309-.515h14.525a.979.979,0,0,0,.982,1,1,1,0,0,0,.859-.485l.309-.515h2.85a.979.979,0,0,0,.982,1,1,1,0,0,0,.859-.485l.309-.515h3.159a6,6,0,0,0,6-6v-6A2,2,0,0,0,215.767,746Zm-.5,8a3.5,3.5,0,0,1-3.5,3.5h-1.6c.077-.107.15-.225.228-.329a5.16,5.16,0,0,0,1-5.487,1,1,0,0,0-1.9.632c.622,1.867.12,2.543-.71,3.663-.252.341-.51.691-.742,1.079l-.266.442h-2.34a4.252,4.252,0,0,0,1.011-3.2l-.005-.3a1,1,0,0,0-2,0l.006.347a2.378,2.378,0,0,1-1.146,2.424.952.952,0,0,0-.26.287l-.266.442H188.381a11.82,11.82,0,0,0,1.386-5.5,1,1,0,0,0-2,0,9.84,9.84,0,0,1-1.4,5.058l-.266.442h-3.288l.979-1.96a4.517,4.517,0,0,0,.476-2.012V748.5h31Z"
+                />
+              </g>
+            </g>
+          </svg>
+          <span>Theme</span>
+        </div>
+        <div class="icon-row__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="37"
+            height="37"
+            viewBox="0 0 37 37"
+          >
+            <g
+              id="그룹_65875"
+              data-name="그룹 65875"
+              transform="translate(-224 -724)"
+            >
+              <g id="그룹_65873" data-name="그룹 65873">
+                <path
+                  id="패스_8080"
+                  data-name="패스 8080"
+                  d="M238.616,738.1v8.8c0,.546-.431.789-.919.789s-.918-.243-.918-.789v-8.8c0-.545.43-.789.918-.789S238.616,737.56,238.616,738.1Z"
+                />
+                <path
+                  id="패스_8081"
+                  data-name="패스 8081"
+                  d="M244.529,737.4c2.97,0,4.52,1.364,4.52,4.836v.531c0,3.473-1.55,4.837-4.52,4.837h-2.368c-.919,0-1.22-.288-1.22-1.192v-7.821c0-.9.3-1.191,1.22-1.191Zm-1.765,8.653h1.521c2.1,0,2.913-.846,2.913-3.429v-.244c0-2.584-.818-3.43-2.913-3.43h-1.521Z"
+                />
+              </g>
+              <g id="그룹_65874" data-name="그룹 65874">
+                <path
+                  id="패스_8082"
+                  data-name="패스 8082"
+                  d="M242.5,761A18.5,18.5,0,1,1,261,742.5,18.521,18.521,0,0,1,242.5,761Zm0-34.419A15.919,15.919,0,1,0,258.419,742.5,15.937,15.937,0,0,0,242.5,726.581Z"
+                />
+              </g>
+            </g>
+          </svg>
+          <span>Account</span>
+        </div>
+        <div class="icon-row__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="38.902"
+            height="37.179"
+            viewBox="0 0 38.902 37.179"
+          >
+            <g
+              id="그룹_65880"
+              data-name="그룹 65880"
+              transform="translate(-266.75 -722.75)"
+            >
+              <path
+                id="패스_5303"
+                data-name="패스 5303"
+                d="M291.034,724h-9.667a13.367,13.367,0,0,0,0,26.735H289a.993.993,0,0,1,1,.947,16.716,16.716,0,0,1-.662,5.666,1,1,0,0,0,1.4,1.2c7.724-3.754,13.664-12.194,13.664-21.176A13.408,13.408,0,0,0,291.034,724"
+                fill="none"
+                stroke="#000"
+                stroke-miterlimit="10"
+                stroke-width="2.5"
+                fill-rule="evenodd"
+              />
+              <g id="그룹_65879" data-name="그룹 65879">
+                <path
+                  id="패스_8090"
+                  data-name="패스 8090"
+                  d="M279.612,737.7v.394c0,2.333-1.075,3.321-2.937,3.321s-2.937-.988-2.937-3.321V737.7c0-2.332,1.075-3.32,2.937-3.32S279.612,735.367,279.612,737.7Zm-4.636.1v.2c0,1.737.576,2.294,1.7,2.294s1.7-.557,1.7-2.294v-.2c0-1.737-.576-2.294-1.7-2.294S274.976,736.059,274.976,737.8Z"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="0.2"
+                />
+                <path
+                  id="패스_8091"
+                  data-name="패스 8091"
+                  d="M283.521,734.484c1.66,0,2.371.845,2.371,1.977v.135a2.089,2.089,0,0,1-2.371,2.083h-1.382v2.159c0,.365-.288.528-.615.528s-.614-.163-.614-.528v-5.557c0-.6.2-.8.816-.8Zm-1.382,3.158h1.218c.807,0,1.3-.259,1.3-1.066v-.1c0-.758-.489-.959-1.19-.959h-1.324Z"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="0.2"
+                />
+                <path
+                  id="패스_8092"
+                  data-name="패스 8092"
+                  d="M291.106,734.484c.288,0,.422.231.422.509s-.134.509-.422.509h-2.87v1.813h2.678c.278,0,.413.231.413.5s-.135.5-.413.5h-2.678v1.978h2.937c.288,0,.422.24.422.509s-.134.509-.422.509h-3.34c-.614,0-.816-.193-.816-.8v-5.231c0-.6.2-.8.816-.8Z"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="0.2"
+                />
+                <path
+                  id="패스_8093"
+                  data-name="패스 8093"
+                  d="M298.22,734.926v5.6c0,.6-.2.8-.816.8-.47,0-.652-.1-1.142-.969l-1.814-3.244a4.586,4.586,0,0,1-.46-1.1v4.856a.571.571,0,0,1-1.133,0v-5.6c0-.605.2-.8.816-.8.47,0,.653.1,1.142.97l1.814,3.244a4.588,4.588,0,0,1,.461,1.1v-4.856a.57.57,0,0,1,1.132,0Z"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="0.2"
+                />
+              </g>
+            </g>
+          </svg>
+          <span>Openchat</span>
+        </div>
+      </div>
+
+      <div class="more-suggestions">
+        <h1 class="more-suggestions__title">Suggestions</h1>
+        <div class="icon-container">
+          <div class="icon-row__icon">
+            <img
+              class="more-suggestions__title__img"
+              src="data:image/jpeg;base64,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"
+            />
+            <span class="icon-row__icon__span">Kokoa Story</span>
+          </div>
+          <div class="icon-row__icon">
+            <img
+              class="more-suggestions__title__img"
+              src="https://lh3.googleusercontent.com/proxy/yjuWa28ED3wj9KL6qOmgDGoNtFWVwb2YATmg4-S10q548JCd4kST73_iBEZOWJCubl_KyjMT4ps9Z1fhXE5JXa8SvxHK91hrpxtFFw8P7SIexdumFAbpBYe2FVd5rn_UUWRWz9OMt0wcNzhpAB6BhvuwOk_xPRPpWBMx6jI"
+            />
+            <span class="icon-row__icon__span">Kokoa friends</span>
+          </div>
+          <div class="icon-row__icon">
+            <img
+              class="more-suggestions__title__img"
+              src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F111388294ACD39B94B"
+            />
+            <span class="icon-row__icon__span">Friends Gem</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="34"
+              viewBox="-2 -1 48 48"
+            >
+              <path
+                id="nav__1"
+                data-name="패스 5088"
+                d="M515-1685.33c-9.86,0-18.086,6-20,13.982a33.8,33.8,0,0,0,20,6.342,33.786,33.786,0,0,0,20-6.344c-1.914-7.98-10.14-13.98-20-13.98M526-1699a11,11,0,0,1-11,11,11,11,0,0,1-11-11,11,11,0,0,1,11-11,11,11,0,0,1,11,11"
+                transform="translate(-495 1710)"
+                stroke="#1d1d1d"
+                stroke-width="4px"
+                fill="transparent"
+                fill-rule="evenodd"
+              /></svg
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span class="nav_notification badge">1</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="-2 0 48 44"
+            >
+              <path
+                id="nav__2"
+                data-name="패스 5303"
+                d="M127-1218h-8a16.047,16.047,0,0,0-16,16,16.047,16.047,0,0,0,16,16h6.7c.268,3.774-.108,7.664-1.954,10.544C134.362-1179.088,143-1190.15,143-1202a16.047,16.047,0,0,0-16-16"
+                transform="translate(-103 1218)"
+                stroke="#1d1d1d"
+                stroke-width="4px"
+                fill="transparent"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="search.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="-1 -1 44 44"
+            >
+              <path
+                id="nav__3"
+                data-name="패스 5014"
+                d="M413-1486a10.011,10.011,0,0,1-10-10,10.011,10.011,0,0,1,10-10,10.011,10.011,0,0,1,10,10,10.011,10.011,0,0,1-10,10m22,9.172-10.8-10.8A13.912,13.912,0,0,0,427-1496a14.015,14.015,0,0,0-14-14,14.015,14.015,0,0,0-14,14,14.015,14.015,0,0,0,14,14,13.912,13.912,0,0,0,8.368-2.8l10.8,10.8a2.005,2.005,0,0,0,2.828,0,2.005,2.005,0,0,0,0-2.828"
+                transform="translate(-399 1510)"
+                fill="#1D1D1D"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html"
+            ><span class="nav__new"> </span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="-2 -20 44 44"
+            >
+              <path
+                id="nav__4"
+                data-name="패스 5279"
+                d="M319-796a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4,4,4,0,0,0-4-4m0-14a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4,4,4,0,0,0-4-4m4-10a4,4,0,0,1-4,4,4,4,0,0,1-4-4,4,4,0,0,1,4-4,4,4,0,0,1,4,4"
+                transform="translate(824 323) rotate(-90)"
+                stroke="#1d1d1d"
+                stroke-width="4px"
+                fill="#1d1d1d"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

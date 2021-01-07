@@ -1,6 +1,3 @@
-.friends-screen {
-  padding: 0px var(--horizontal-space);
-}
 .friends-screen__channel {
   display: flex;
   justify-content: space-between;
@@ -15,7 +12,7 @@
   margin-bottom: 25px;
 }
 #friends-display-link {
-  margin-top: -16px;
+  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
