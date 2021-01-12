@@ -1,3 +1,6 @@
+.friends-screen {
+  height: 100%;
+}
 .friends-screen__channel {
   display: flex;
   justify-content: space-between;
@@ -25,4 +28,26 @@
 }
 #friends-display-link :nth-child(2) {
   margin-left: 10px;
+}
+#splash-screen {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  background-color: var(--yellow);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: OpacityAnimation 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+@keyframes OpacityAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

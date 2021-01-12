@@ -1,0 +1,53 @@
+.alt-header {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px 20px;
+}
+.alt-header__column {
+  width: 33%;
+}
+.alt-header__column span {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+.alt-header__column:first-child {
+  margin-right: auto;
+  /* 마진 오토는 끝으로 자동정렬 */
+}
+.alt-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  /* 마진 오토는 끝으로 자동정렬 */
+}
+.settings-setting {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+.settings-setting span {
+  margin-left: 20px;
+}
+.settings-setting svg {
+  opacity: 0.6;
+}
+.settings-setting__column {
+  display: flex;
+  align-items: center;
+}
+.settings-setting__column:last-child {
+  opacity: 0.5;
+}
+.alt-header__column {
+  display: flex;
+  align-items: center;
+}

@@ -98,3 +98,21 @@
   padding: 20px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.open-post__heart-count:hover svg {
+  will-change: transform;
+  animation: heartbeat 0.5s linear infinite;
+}
+@keyframes heartbeat {
+  0% {
+    fill: white;
+    transform: none;
+  }
+  50% {
+    fill: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    fill: white;
+    transform: none;
+  }
+}

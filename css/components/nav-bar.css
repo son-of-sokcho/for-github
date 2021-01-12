@@ -1,4 +1,5 @@
 .nav {
+  position: absolute;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -20,6 +21,7 @@
   /* position:absolute는 부모의 속성 기준으로 움직임, 부모의 포지션을 relative로 설정하기 */
   right: -4px;
   top: -24px;
+  animation: notificationAnimation 1s ease-in-out infinite;
 }
 .nav__new {
   background-color: rgb(245, 87, 59);
@@ -30,4 +32,41 @@
   /* position:absolute는 부모의 속성 기준으로 움직임, 부모의 포지션을 relative로 설정하기 */
   right: -4px;
   top: -16px;
+}
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-4px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes navbtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__li {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: navbtnAnimation 1s ease-in-out forwards;
+}
+.nav__li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav__li:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav__li:last-child {
+  animation-delay: 0.7s;
 }
