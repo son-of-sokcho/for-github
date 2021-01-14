@@ -16,7 +16,20 @@
 .hamburger {
   margin-left: 20px;
 }
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
+  animation: fadeIn 0.5s linear;
   display: flex;
   flex-direction: column;
   align-items: center;
