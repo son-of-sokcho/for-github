@@ -2,3 +2,16 @@ body {
   color: white;
   background-color: bisque;
 }
+
+.clicked {
+  color: blueviolet;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
