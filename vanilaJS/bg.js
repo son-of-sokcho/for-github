@@ -10,7 +10,6 @@ function getImage(){
     img.src = `images/${imgNumber}.jpg`
     img.classList.add('bgImg');
     bgImage.appendChild(img);
-    return number;
 }
 
 function delImg(){
@@ -18,7 +17,7 @@ function delImg(){
 
 function init(){
     getImage();
-    setInterval(getImage,5000)
+    setInterval(getImage,4000)
     setInterval(delImg,5000)
 };
 

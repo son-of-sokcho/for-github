@@ -1,4 +1,9 @@
 body {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
   background-color: rgb(14, 3, 65);
 }
@@ -12,6 +17,10 @@ body {
   display: none;
 }
 
+.js-toDoInput {
+  width: 30vw;
+}
+
 .showing {
   display: block;
 }
@@ -23,6 +32,11 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 1s ease-in-out;
+}
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @keyframes fadeIn {
   from {
